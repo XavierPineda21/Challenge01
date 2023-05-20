@@ -1,54 +1,62 @@
-body{
+body {
 	background-color: #F3F5FC;
 	font-family: "Inter", sans-serif;
 }
 
-header{
+header {
 	background-color: #F3F5FC;
 	padding: 20px 0px;
 }
 
-.logo{
+.logo {
 	margin: 0 auto;
 }
 
-.cajaPrincipal{
+.cajaPrincipal {
 	margin: auto;
-	width: 1200px;
+	width: 90%;
+	max-width: 1200px;
 	height: 800px;
 	background-color: #F3F5FC;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.cajaTexto{
+.cajaTexto {
 	background-color: #F3F5FC;
 	width: 600px;
 	height: 400px;
 }
 
-.cajaTexto input{
-	position: absolute;
-	top:15%;
-	left: 5%;
+.cajaTexto input {
 	width: 500px;
 	height: 48px;
 	background-color: #F3F5FC;
 	border: none;
-
 	font-family: "Inter";
 	font-size: 28px;
 	font-weight: 400;
 }
 
-.cajaBotones{
-	margin-top: 16.7%;
+.cajaBotones {
 	width: 900px;
 	height: 200px;
 	background-color: #F3F5FC;
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 10px;
 }
 
-.cajaBotones button{
-	width: 328px;
+.cajaBotones p {
+	margin: 0 0 10px 100px;
+	padding: 15px 0;
+}
+
+.cajaBotones button {
+	width: 300px;
 	height: 60px;
 	margin: 0 0 0 10%;
 	padding: 10px 20px;
@@ -58,22 +66,17 @@ header{
 	cursor: pointer;
 }
 
-.boton1{
+.boton1 {
 	background-color: #0A3871;
 	color: #FFFFFF;
 }
 
-.boton2{
+.boton2 {
 	background-color: #D8DFE8;
 	color: #0A3871;
 }
 
-div p{
-	margin: 0 0 0 100px;
-	padding: 15px 0;
-}
-
-.cajaResultado{
+.cajaResultado {
 	position: absolute;
 	top: 0%;
 	left: 80%;
@@ -82,14 +85,14 @@ div p{
 	background: #FFFFFF;
 	box-shadow: rgba(0, 0, 0, 0.08);
 	border-radius: 32px;
-}
-
-.muneco{
-	margin: 30% 0;
 	text-align: center;
 }
 
-.cajaResultado h1{
+.muneco {
+	margin: 30% 0;
+}
+
+.cajaResultado h1 {
 	font-size: 24px;
 	font-family: "Inter";
 	font-weight: bold;
@@ -97,19 +100,47 @@ div p{
 	padding: 24px;
 }
 
-.cajaResultado h2{
+.cajaResultado h2 {
 	font-size: 16px;
 	font-family: "Inter";
 	text-align: center;
 	padding: 24px;
 }
 
-footer{
+footer {
 	background-color: #F3F5FC;
+	padding: 20px 0;
 }
 
-footer h1{
+footer h1 {
 	text-align: center;
 	font-weight: bold;
 	font-size: 16px;
+}
+
+@media (max-width: 768px) {
+	.cajaPrincipal {
+		flex-direction: column;
+		height: auto;
+		padding: 20px;
+	}
+
+	.cajaTexto {
+		width: 300px;
+		height: auto;
+	}
+
+	.cajaBotones {
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0;
+	}
+
+	.cajaResultado {
+		position: static;
+		margin-top: 30px;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
 }

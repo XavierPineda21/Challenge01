@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width ,initial-scale=1">
 		<title>Encriptador</title>
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -26,14 +26,16 @@
 						<input type="text" name="Codificar" placeholder="Ingrese el texto aqui">			
 					</div>
 
-					<div class="cajaBotones">					
-						<p><img src="imagenes/Vector.png"> Solo letras minusculas y sin acentos</p>
-						<button class="boton1">Encriptar</button>
+					<div class="cajaBotones">		
+						<!-- Botones para encriptar y desencriptar-->			
+						<p id="textAdvertencia"><img src="imagenes/Vector.png"> Solo letras minusculas y sin acentos</p>
+						<button class="boton1" id="textAdvertencia">Encriptar</button>
 						<button class="boton2">Desencriptar</button>
 					</div>
 				</form>
 
 				<div class="cajaResultado">
+					<!-- Caja donde se mostrara el mensaje-->
 					<img src="imagenes/Muneco.png" class="muneco">
 					<h1>Ningun mensaje fue encontrado</h1>
 					<h2>Ingrese el texto que desea encriptar o desencriptar</h2>
