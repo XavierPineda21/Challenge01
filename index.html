@@ -6,6 +6,7 @@
 		<title>Encriptador</title>
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
@@ -21,23 +22,23 @@
 		<main>
 			<div class="cajaPrincipal">
 				<form>
+					<!-- caja para ingresar el texto a encriptar-->					
 					<div class="cajaTexto">
-						<!-- Textarea para ingresar el texto a encriptar-->
-						<input type="text" name="Codificar" placeholder="Ingrese el texto aqui">			
+						<input type="text" placeholder="Ingrese el texto aqui">			
 					</div>
 
-					<div class="cajaBotones">		
-						<!-- Botones para encriptar y desencriptar-->			
+					<!-- Botones para encriptar y desencriptar-->
+					<div class="cajaBotones">								
 						<p id="textAdvertencia"><img src="imagenes/Vector.png"> Solo letras minusculas y sin acentos</p>
-						<button class="boton1" id="textAdvertencia">Encriptar</button>
+						<button class="boton1" >Encriptar</button>
 						<button class="boton2">Desencriptar</button>
 					</div>
 				</form>
 
+				<!-- Caja donde se mostrara el mensaje-->
 				<div class="cajaResultado">
-					<!-- Caja donde se mostrara el mensaje-->
 					<img src="imagenes/Muneco.png" class="muneco">
-					<h1>Ningun mensaje fue encontrado</h1>
+					<h1 id="texto1">Ningun mensaje fue encontrado</h1>
 					<h2>Ingrese el texto que desea encriptar o desencriptar</h2>
 				</div>
 			</div>
@@ -47,6 +48,5 @@
 		<footer>
 			<h1>Xavier Isaac Pineda Villatoro - Grupo:05</h1>
 		</footer>
-
 	</body>
 </html>

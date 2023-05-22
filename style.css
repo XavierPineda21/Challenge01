@@ -38,6 +38,7 @@ header {
 	font-family: "Inter";
 	font-size: 28px;
 	font-weight: 400;
+	text-transform: lowercase;
 }
 
 .cajaBotones {
@@ -107,6 +108,15 @@ header {
 	padding: 24px;
 }
 
+.cajaResultado p{
+	font-size: 24px;
+	font-family: "Inter";
+	font-weight: bold;
+	text-align: center;
+	padding: 24px;
+	top: 200PX;
+}
+
 footer {
 	background-color: #F3F5FC;
 	padding: 20px 0;
@@ -144,3 +154,4 @@ footer h1 {
 		height: auto;
 	}
 }
+
