@@ -67,16 +67,26 @@ header {
 	cursor: pointer;
 }
 
-.boton1 {
+.botonEncriptar {
 	background-color: #0A3871;
 	color: #FFFFFF;
 }
 
-.boton2 {
+.botonDesencriptar {
 	background-color: #D8DFE8;
 	color: #0A3871;
 }
 
+.botonCopiar{
+	width: 300px;
+	height: 60px;
+	padding: 10px 20px;
+	border: 2px solid #0A3871;
+	border-radius: 24px;
+	font-size: 16px;
+	cursor: pointer;
+	display: none;
+}
 .cajaResultado {
 	position: absolute;
 	top: 0%;
@@ -109,7 +119,7 @@ header {
 }
 
 .cajaResultado p{
-	font-size: 24px;
+	font-size: 20px;
 	font-family: "Inter";
 	font-weight: bold;
 	text-align: center;
