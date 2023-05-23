@@ -6,7 +6,7 @@
 		<title>Encriptador de texto</title>
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-				
+		<script src="script.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
@@ -20,38 +20,34 @@
 		</header>
 
 		<main>
-			<div class="cajaPrincipal">
+			<section class="cajaPrincipal">
 				<form>
-					<!-- caja para ingresar el texto a encriptar-->					
-					<div class="cajaTexto">
-						<input type="text" placeholder="Ingrese el texto aqui">			
-					</div>
+					<!-- Caja para ingresar el texto a encriptar-->					
+					<section class="cajaTexto">	
+						<input type="text" placeholder="Ingrese el texto aqui">		
+					</section>
 
 					<!-- Botones para encriptar, desencriptar y copiar -->
-					<div class="cajaBotones">								
+					<section class="cajaBotones">								
 						<p id="textAdvertencia"><img src="imagenes/Vector.png"> Solo letras minusculas y sin acentos</p>
 						<button class="botonEncriptar" onclick="botonEncriptarClick()">Encriptar</button>
-						<button class="botonDesencriptar" onclick="botonDesencriptarClick()">Desencriptar</button>
-
-					</div>
+						<button class="botonDesencriptar" onclick="botonDesencriptarClick()">Desencriptar</button>				
+						<button class="botonCopiar" onclick="botonCopiarClick()">Copiar</button>
+					</section>
 				</form>
 
 				<!-- Caja donde se mostrara el mensaje-->
-				<div class="cajaResultado">
-					
+				<section class="cajaResultado">
 					<img src="imagenes/Muneco.png" class="muneco">
 					<h1 id="texto1">Ningun mensaje fue encontrado</h1>
-					<h2>Ingrese el texto que desea encriptar o desencriptar</h2>
-					<button class="botonCopiar">Copiar</button>
-				</div>
-			</div>
+					<h2>Ingrese el texto que desea encriptar o desencriptar</h2>		
+				</section>
+			</section>
 
 		</main>
 
 		<footer>
 			<h1>Xavier Isaac Pineda Villatoro - Grupo:05</h1>
 		</footer>
-
-		<script src="script.js"></script>
 	</body>
 </html>
